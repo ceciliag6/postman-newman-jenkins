@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "cd2d070f-d280-4222-9d45-5a22bd5df118",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Creae Board",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "987da051-b3ae-41dd-abd3-7df926fcd3e5",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=Cecilia&defaultLabels=true&defaultLists=true&keepFromSource=none&prefs_permissionLevel=private&prefs_voting=disabled&prefs_comments=members&prefs_invitations=members&prefs_selfJoin=true&prefs_cardCovers=true&prefs_background=blue&prefs_cardAging=regular&key=4c92a0e3526de098fc1b05a69a28d8f3&token=d1d44ba228c0292f75baa028a3c2e3d1f7b967763a8b961d20fcad8105ce3b4e",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Cecilia"
+						},
+						{
+							"key": "defaultLabels",
+							"value": "true"
+						},
+						{
+							"key": "defaultLists",
+							"value": "true"
+						},
+						{
+							"key": "keepFromSource",
+							"value": "none"
+						},
+						{
+							"key": "prefs_permissionLevel",
+							"value": "private"
+						},
+						{
+							"key": "prefs_voting",
+							"value": "disabled"
+						},
+						{
+							"key": "prefs_comments",
+							"value": "members"
+						},
+						{
+							"key": "prefs_invitations",
+							"value": "members"
+						},
+						{
+							"key": "prefs_selfJoin",
+							"value": "true"
+						},
+						{
+							"key": "prefs_cardCovers",
+							"value": "true"
+						},
+						{
+							"key": "prefs_background",
+							"value": "blue"
+						},
+						{
+							"key": "prefs_cardAging",
+							"value": "regular"
+						},
+						{
+							"key": "key",
+							"value": "4c92a0e3526de098fc1b05a69a28d8f3"
+						},
+						{
+							"key": "token",
+							"value": "d1d44ba228c0292f75baa028a3c2e3d1f7b967763a8b961d20fcad8105ce3b4e"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
